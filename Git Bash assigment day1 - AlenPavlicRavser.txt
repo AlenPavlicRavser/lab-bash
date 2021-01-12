@@ -1,0 +1,1438 @@
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Microsoft/
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.0.regtrans-ms
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.1.regtrans-ms
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.2.regtrans-ms
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Program01/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Untitled.ipynb
+ Videos/
+ anaconda3/
+ bcn-feb-2019-prework/
+ data-prework/
+ exit
+ lab-bash/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ program-02-prework/
+ source/
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~
+$ cd lab-bash
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem-copy
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ ls
+dummy_file.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd lorem
+bash: cd: lorem: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd lab.bash
+bash: cd: lab.bash: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd lab-bash
+bash: cd: lab-bash: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cp at.txt; cp at.txte lorem-copy
+cp: missing destination file operand after 'at.txt'
+Try 'cp --help' for more information.
+
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cp --help
+Usage: cp [OPTION]... [-T] SOURCE DEST
+  or:  cp [OPTION]... SOURCE... DIRECTORY
+  or:  cp [OPTION]... -t DIRECTORY SOURCE...
+Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --archive                same as -dR --preserve=all
+      --attributes-only        don't copy the file data, just the attributes
+      --backup[=CONTROL]       make a backup of each existing destination file
+  -b                           like --backup but does not accept an argument
+      --copy-contents          copy contents of special files when recursive
+  -d                           same as --no-dereference --preserve=links
+  -f, --force                  if an existing destination file cannot be
+                                 opened, remove it and try again (this option
+                                 is ignored when the -n option is also used)
+  -i, --interactive            prompt before overwrite (overrides a previous -n
+                                  option)
+  -H                           follow command-line symbolic links in SOURCE
+  -l, --link                   hard link files instead of copying
+  -L, --dereference            always follow symbolic links in SOURCE
+  -n, --no-clobber             do not overwrite an existing file (overrides
+                                 a previous -i option)
+  -P, --no-dereference         never follow symbolic links in SOURCE
+  -p                           same as --preserve=mode,ownership,timestamps
+      --preserve[=ATTR_LIST]   preserve the specified attributes (default:
+                                 mode,ownership,timestamps), if possible
+                                 additional attributes: context, links, xattr,
+                                 all
+      --no-preserve=ATTR_LIST  don't preserve the specified attributes
+      --parents                use full source file name under DIRECTORY
+  -R, -r, --recursive          copy directories recursively
+      --reflink[=WHEN]         control clone/CoW copies. See below
+      --remove-destination     remove each existing destination file before
+                                 attempting to open it (contrast with --force)
+      --sparse=WHEN            control creation of sparse files. See below
+      --strip-trailing-slashes  remove any trailing slashes from each SOURCE
+                                 argument
+  -s, --symbolic-link          make symbolic links instead of copying
+  -S, --suffix=SUFFIX          override the usual backup suffix
+  -t, --target-directory=DIRECTORY  copy all SOURCE arguments into DIRECTORY
+  -T, --no-target-directory    treat DEST as a normal file
+  -u, --update                 copy only when the SOURCE file is newer
+                                 than the destination file or when the
+                                 destination file is missing
+  -v, --verbose                explain what is being done
+  -x, --one-file-system        stay on this file system
+  -Z                           set SELinux security context of destination
+                                 file to default type
+      --context[=CTX]          like -Z, or if CTX is specified then set the
+                                 SELinux or SMACK security context to CTX
+      --help     display this help and exit
+      --version  output version information and exit
+
+By default, sparse SOURCE files are detected by a crude heuristic and the
+corresponding DEST file is made sparse as well.  That is the behavior
+selected by --sparse=auto.  Specify --sparse=always to create a sparse DEST
+file whenever the SOURCE file contains a long enough sequence of zero bytes.
+Use --sparse=never to inhibit creation of sparse files.
+
+When --reflink[=always] is specified, perform a lightweight copy, where the
+data blocks are copied only when modified.  If this is not possible the copy
+fails, or if --reflink=auto is specified, fall back to a standard copy.
+Use --reflink=never to ensure a standard copy is performed.
+
+The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.
+The version control method may be selected via the --backup option or through
+the VERSION_CONTROL environment variable.  Here are the values:
+
+  none, off       never make backups (even if --backup is given)
+  numbered, t     make numbered backups
+  existing, nil   numbered if numbered backups exist, simple otherwise
+  simple, never   always make simple backups
+
+As a special case, cp makes a backup of SOURCE when the force and backup
+options are given and SOURCE and DEST are the same name for an existing,
+regular file.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/cp>
+or available locally via: info '(coreutils) cp invocation'
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cp at.txt lorem-copy; cp at.txte lorem-copy
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed -n "1,3p" sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed -n "1, 3p" sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed -n sed.txt
+sed: -e expression #1, char 7: unterminated `s' command
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed -n sed.txt
+sed: -e expression #1, char 7: unterminated `s' command
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :sed.txt
+fatal: path 'lorem/sed.txt' is in the index, but not 'sed.txt'
+hint: Did you mean ':0:lorem/sed.txt' aka ':0:./sed.txt'?
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :0:lorem/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :0:lorem/at.txt+lorem.txt
+fatal: path 'lorem/at.txt+lorem.txt' does not exist (neither on disk nor in the index)
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show ^C
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :0:lorem/at.txt; :0:lorem/lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+bash: :0:lorem/lorem.txt: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :0:lorem/at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :0:lorem/lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show^C
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show ^C
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :0:lorem/lorem.txt; ^C
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ^C
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$  git show :0:lorem/lorem.txt;  git show :0:lorem/at.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :0:lorem/lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ^C
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$  sed -n "1, 3p" sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cd lorem-copy
+bash: cd: lorem-copy: Not a directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem-copy
+
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ sed -n "1, 3p" sed.txt
+sed: can't read sed.txt: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ sed -n "1, 3p" sed.txt
+sed: can't read sed.txt: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ sed +n "1, 3p" sed.txt
+sed: can't read 1, 3p: No such file or directory
+sed: can't read sed.txt: No such file or directory
+
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cp lorem
+cp: missing destination file operand after 'lorem'
+Try 'cp --help' for more information.
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cp..
+bash: cp..: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ sd..
+bash: sd..: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd..
+bash: cd..: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cp lorem/at.txt lorem-copy/at.txt; cp lorem/lorem.txt lorem-copy/lorem.txt
+cp: failed to access 'lorem-copy/at.txt': Not a directory
+cp: failed to access 'lorem-copy/lorem.txt': Not a directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cp lorem/at.txt lorem-copy/at.txt; cp lorem/lorem.txt lorem-copy/lorem.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem-copy
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ ls
+at.txt  dummy_file.txt  lorem.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cat at.txt; cat lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ had -3 lorem/at.txt
+bash: had: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cd lorem-copy
+bash: cd: lorem-copy: Not a directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem-copy
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ had -3 lorem-copy/sed.txt
+bash: had: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ had -3 lorem/at.txt
+bash: had: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem-copy
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ head -3 lorem.copy/at.txt
+head: cannot open 'lorem.copy/at.txt' for reading: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ head -3 lorem.copy/at.txt
+head: cannot open 'lorem.copy/at.txt' for reading: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ head -3 lorem/at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem-copy
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ ls
+at.txt  dummy_file.txt  lorem.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ pwd
+/c/Users/Alen/lab-bash/lorem-copy
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd lab-bash
+bash: cd: lab-bash: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ head -3 lorem-copy/at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ tail -3 lorem-copy/at.txt
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ echo "Homo homini lupus" >> sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ tail -3 sed.txt
+Homo homini lupus
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ sed -i -r "s/et/ET/g" at.txt
+sed: can't read at.txt: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md  sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cat sed.txt
+Homo homini lupus
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cat at.txt
+cat: at.txt: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed -i -r "s/et/ET/g" at.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed -i -r "s/ET/et/g" at.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cat at.txt
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+Et harum quidem rerum facilis est et expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+ut et voluptates repudiandae sint et molestiae non recusandae.
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ whoami
+Alen
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ pwd
+/c/Users/Alen/lab-bash/lorem
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed.txt
+bash: sed.txt: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed .txt
+sed: -e expression #1, char 1: unknown command: `.'
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed.txt
+bash: sed.txt: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls.txt
+bash: ls.txt: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls .txt
+ls: cannot access '.txt': No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed txt
+sed: can't find label for jump to `xt'
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+      --debug
+                 annotate program execution
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -b, --binary
+                 open files in binary mode (CR+LFs are not processed specially)
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l' command
+  --posix
+                 disable all GNU extensions.
+  -E, -r, --regexp-extended
+                 use extended regular expressions in the script
+                 (for portability use POSIX -E).
+  -s, --separate
+                 consider files as separate rather than as a single,
+                 continuous long stream.
+      --sandbox
+                 operate in sandbox mode (disable e/r/w commands).
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+      --help     display this help and exit
+      --version  output version information and exit
+
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+
+GNU sed home page: <https://www.gnu.org/software/sed/>.
+General help using GNU software: <https://www.gnu.org/gethelp/>.
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed.txt
+bash: sed.txt: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cat
+wc
+wc
+
+
+wc
+wc
+˘lls
+˘lls
+ls
+ls
+
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Microsoft/
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.0.regtrans-ms
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.1.regtrans-ms
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.2.regtrans-ms
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Program01/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Untitled.ipynb
+ Videos/
+ anaconda3/
+ bcn-feb-2019-prework/
+ data-prework/
+ exit
+ lab-bash/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ program-02-prework/
+ source/
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~
+$ cd lab-bash
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem-copy
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ ls
+dummy_file.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd lorem
+bash: cd: lorem: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd lab.bash
+bash: cd: lab.bash: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd lab-bash
+bash: cd: lab-bash: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cp at.txt; cp at.txte lorem-copy
+cp: missing destination file operand after 'at.txt'
+Try 'cp --help' for more information.
+
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cp --help
+Usage: cp [OPTION]... [-T] SOURCE DEST
+  or:  cp [OPTION]... SOURCE... DIRECTORY
+  or:  cp [OPTION]... -t DIRECTORY SOURCE...
+Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --archive                same as -dR --preserve=all
+      --attributes-only        don't copy the file data, just the attributes
+      --backup[=CONTROL]       make a backup of each existing destination file
+  -b                           like --backup but does not accept an argument
+      --copy-contents          copy contents of special files when recursive
+  -d                           same as --no-dereference --preserve=links
+  -f, --force                  if an existing destination file cannot be
+                                 opened, remove it and try again (this option
+                                 is ignored when the -n option is also used)
+  -i, --interactive            prompt before overwrite (overrides a previous -n
+                                  option)
+  -H                           follow command-line symbolic links in SOURCE
+  -l, --link                   hard link files instead of copying
+  -L, --dereference            always follow symbolic links in SOURCE
+  -n, --no-clobber             do not overwrite an existing file (overrides
+                                 a previous -i option)
+  -P, --no-dereference         never follow symbolic links in SOURCE
+  -p                           same as --preserve=mode,ownership,timestamps
+      --preserve[=ATTR_LIST]   preserve the specified attributes (default:
+                                 mode,ownership,timestamps), if possible
+                                 additional attributes: context, links, xattr,
+                                 all
+      --no-preserve=ATTR_LIST  don't preserve the specified attributes
+      --parents                use full source file name under DIRECTORY
+  -R, -r, --recursive          copy directories recursively
+      --reflink[=WHEN]         control clone/CoW copies. See below
+      --remove-destination     remove each existing destination file before
+                                 attempting to open it (contrast with --force)
+      --sparse=WHEN            control creation of sparse files. See below
+      --strip-trailing-slashes  remove any trailing slashes from each SOURCE
+                                 argument
+  -s, --symbolic-link          make symbolic links instead of copying
+  -S, --suffix=SUFFIX          override the usual backup suffix
+  -t, --target-directory=DIRECTORY  copy all SOURCE arguments into DIRECTORY
+  -T, --no-target-directory    treat DEST as a normal file
+  -u, --update                 copy only when the SOURCE file is newer
+                                 than the destination file or when the
+                                 destination file is missing
+  -v, --verbose                explain what is being done
+  -x, --one-file-system        stay on this file system
+  -Z                           set SELinux security context of destination
+                                 file to default type
+      --context[=CTX]          like -Z, or if CTX is specified then set the
+                                 SELinux or SMACK security context to CTX
+      --help     display this help and exit
+      --version  output version information and exit
+
+By default, sparse SOURCE files are detected by a crude heuristic and the
+corresponding DEST file is made sparse as well.  That is the behavior
+selected by --sparse=auto.  Specify --sparse=always to create a sparse DEST
+file whenever the SOURCE file contains a long enough sequence of zero bytes.
+Use --sparse=never to inhibit creation of sparse files.
+
+When --reflink[=always] is specified, perform a lightweight copy, where the
+data blocks are copied only when modified.  If this is not possible the copy
+fails, or if --reflink=auto is specified, fall back to a standard copy.
+Use --reflink=never to ensure a standard copy is performed.
+
+The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.
+The version control method may be selected via the --backup option or through
+the VERSION_CONTROL environment variable.  Here are the values:
+
+  none, off       never make backups (even if --backup is given)
+  numbered, t     make numbered backups
+  existing, nil   numbered if numbered backups exist, simple otherwise
+  simple, never   always make simple backups
+
+As a special case, cp makes a backup of SOURCE when the force and backup
+options are given and SOURCE and DEST are the same name for an existing,
+regular file.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/cp>
+or available locally via: info '(coreutils) cp invocation'
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cp at.txt lorem-copy; cp at.txte lorem-copy
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed -n "1,3p" sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed -n "1, 3p" sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed -n sed.txt
+sed: -e expression #1, char 7: unterminated `s' command
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed -n sed.txt
+sed: -e expression #1, char 7: unterminated `s' command
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :sed.txt
+fatal: path 'lorem/sed.txt' is in the index, but not 'sed.txt'
+hint: Did you mean ':0:lorem/sed.txt' aka ':0:./sed.txt'?
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :0:lorem/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :0:lorem/at.txt+lorem.txt
+fatal: path 'lorem/at.txt+lorem.txt' does not exist (neither on disk nor in the index)
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show ^C
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :0:lorem/at.txt; :0:lorem/lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+bash: :0:lorem/lorem.txt: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :0:lorem/at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :0:lorem/lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show^C
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show ^C
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :0:lorem/lorem.txt; ^C
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ^C
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$  git show :0:lorem/lorem.txt;  git show :0:lorem/at.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ git show :0:lorem/lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ^C
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$  sed -n "1, 3p" sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cd lorem-copy
+bash: cd: lorem-copy: Not a directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem-copy
+
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ sed -n "1, 3p" sed.txt
+sed: can't read sed.txt: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ sed -n "1, 3p" sed.txt
+sed: can't read sed.txt: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ sed +n "1, 3p" sed.txt
+sed: can't read 1, 3p: No such file or directory
+sed: can't read sed.txt: No such file or directory
+
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cp lorem
+cp: missing destination file operand after 'lorem'
+Try 'cp --help' for more information.
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cp..
+bash: cp..: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ sd..
+bash: sd..: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd..
+bash: cd..: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cp lorem/at.txt lorem-copy/at.txt; cp lorem/lorem.txt lorem-copy/lorem.txt
+cp: failed to access 'lorem-copy/at.txt': Not a directory
+cp: failed to access 'lorem-copy/lorem.txt': Not a directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cp lorem/at.txt lorem-copy/at.txt; cp lorem/lorem.txt lorem-copy/lorem.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem-copy
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ ls
+at.txt  dummy_file.txt  lorem.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cat at.txt; cat lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ had -3 lorem/at.txt
+bash: had: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cd lorem-copy
+bash: cd: lorem-copy: Not a directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem-copy
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ had -3 lorem-copy/sed.txt
+bash: had: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ had -3 lorem/at.txt
+bash: had: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem-copy
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ head -3 lorem.copy/at.txt
+head: cannot open 'lorem.copy/at.txt' for reading: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ head -3 lorem.copy/at.txt
+head: cannot open 'lorem.copy/at.txt' for reading: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ head -3 lorem/at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem-copy
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ ls
+at.txt  dummy_file.txt  lorem.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ pwd
+/c/Users/Alen/lab-bash/lorem-copy
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd lab-bash
+bash: cd: lab-bash: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem-copy (master)
+$ cd ..
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ head -3 lorem-copy/at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ tail -3 lorem-copy/at.txt
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ echo "Homo homini lupus" >> sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ tail -3 sed.txt
+Homo homini lupus
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ sed -i -r "s/et/ET/g" at.txt
+sed: can't read at.txt: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  outputs/  readme.md  sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cat sed.txt
+Homo homini lupus
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cat at.txt
+cat: at.txt: No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash (master)
+$ cd lorem
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed -i -r "s/et/ET/g" at.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed -i -r "s/ET/et/g" at.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cat at.txt
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+Et harum quidem rerum facilis est et expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+ut et voluptates repudiandae sint et molestiae non recusandae.
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ whoami
+Alen
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ pwd
+/c/Users/Alen/lab-bash/lorem
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed.txt
+bash: sed.txt: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed .txt
+sed: -e expression #1, char 1: unknown command: `.'
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed.txt
+bash: sed.txt: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls.txt
+bash: ls.txt: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls .txt
+ls: cannot access '.txt': No such file or directory
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ ls
+at.txt  at.txte  lorem-copy  lorem.txt  sed.txt
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed txt
+sed: can't find label for jump to `xt'
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+
+  -n, --quiet, --silent
+                 suppress automatic printing of pattern space
+      --debug
+                 annotate program execution
+  -e script, --expression=script
+                 add the script to the commands to be executed
+  -f script-file, --file=script-file
+                 add the contents of script-file to the commands to be executed
+  --follow-symlinks
+                 follow symlinks when processing in place
+  -i[SUFFIX], --in-place[=SUFFIX]
+                 edit files in place (makes backup if SUFFIX supplied)
+  -b, --binary
+                 open files in binary mode (CR+LFs are not processed specially)
+  -l N, --line-length=N
+                 specify the desired line-wrap length for the `l' command
+  --posix
+                 disable all GNU extensions.
+  -E, -r, --regexp-extended
+                 use extended regular expressions in the script
+                 (for portability use POSIX -E).
+  -s, --separate
+                 consider files as separate rather than as a single,
+                 continuous long stream.
+      --sandbox
+                 operate in sandbox mode (disable e/r/w commands).
+  -u, --unbuffered
+                 load minimal amounts of data from the input files and flush
+                 the output buffers more often
+  -z, --null-data
+                 separate lines by NUL characters
+      --help     display this help and exit
+      --version  output version information and exit
+
+If no -e, --expression, -f, or --file option is given, then the first
+non-option argument is taken as the sed script to interpret.  All
+remaining arguments are names of input files; if no input files are
+specified, then the standard input is read.
+
+GNU sed home page: <https://www.gnu.org/software/sed/>.
+General help using GNU software: <https://www.gnu.org/gethelp/>.
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ sed.txt
+bash: sed.txt: command not found
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$ cat
+wc
+wc
+
+
+wc
+wc
+˘lls
+˘lls
+ls
+ls
+
+
+Alen@DESKTOP-IBTREB8 MINGW64 ~/lab-bash/lorem (master)
+$
